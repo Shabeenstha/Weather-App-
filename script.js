@@ -30,6 +30,7 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' +city, opt
 }
 
 submit.addEventListener("click",(e)=>{ 
+e.preventDefault()
 getWeather(city.value)
 
 })
